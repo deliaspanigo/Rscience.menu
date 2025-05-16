@@ -1,1 +1,0 @@
-choices_list <- yaml.load_file("inst/yaml/menu00.yaml")$choices

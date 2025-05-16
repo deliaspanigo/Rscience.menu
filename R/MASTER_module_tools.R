@@ -7,7 +7,8 @@ MASTER_module_tools_ui <- function(id) {
   div(
     h3("Selección de opciones"),
     uiOutput(ns("todos_selects")),
-    uiOutput(ns("show_dev"))
+    uiOutput(ns("show_dev")),
+    uiOutput(ns("zocalo_tools"))
     
      
   )
@@ -276,8 +277,8 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       }
       
       # Invertir orden si quieres
-      df_resultado <- df_resultado[nrow(df_resultado):1, ]
-      rownames(df_resultado) <- 1:nrow(df_resultado)
+      # df_resultado <- df_resultado[nrow(df_resultado):1, ]
+      if(nrow(df_resultado) >= 1) rownames(df_resultado) <- paste0("label", 1:nrow(df_resultado))
       return(df_resultado)
     })
     
@@ -301,6 +302,12 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       selected_tool()
     })
     
+    output$zocalo_tools <- renderUI({
+      req(df_todas_selecciones())
+      req(ncol(df_todas_selecciones())>= 1)
+      
+      fn_infoUI_zocalo_tools(df_data_obj = df_todas_selecciones())
+    })
     
     return(reactive(list(selected_tool = selected_tool(), 
                          df_todas_selecciones = df_todas_selecciones())))
