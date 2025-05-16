@@ -10,6 +10,17 @@ fn_infoUI_zocalo_tools <- function(df_data_obj) {
   
   
   div(
+    class = "p-3 rounded shadow-sm",
+    style = "background: linear-gradient(to right, #f8f9fa, #ffffff);",
+    
+    # Título principal
+    h4(
+      class = "mb-3 pb-2",
+      style = "border-bottom: 2px solid #0d6efd; color: #0d6efd;",
+      icon("info-circle"), 
+      "Tools Selection"
+    ),
+  div(
     class = "mb-3 p-2 rounded",
     style = "background-color: rgba(25, 135, 84, 0.05); border-left: 4px solid #198754;",
     
@@ -27,6 +38,6 @@ fn_infoUI_zocalo_tools <- function(df_data_obj) {
         })
       )
     )
-  
+  )
   
 }

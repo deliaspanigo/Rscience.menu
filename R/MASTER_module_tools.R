@@ -6,9 +6,12 @@ MASTER_module_tools_ui <- function(id) {
   # En tu UI
   div(
     h3("Selección de opciones"),
-    uiOutput(ns("todos_selects")),
-    uiOutput(ns("show_dev")),
-    uiOutput(ns("zocalo_tools"))
+    fluidRow(
+      column(6, uiOutput(ns("todos_selects"))),
+      column(6, uiOutput(ns("zocalo_tools")))
+    ),
+    uiOutput(ns("show_dev"))
+    
     
      
   )
@@ -110,7 +113,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
           label = paste("Nivel", i, "-", menu_name),
           choices = choices,
           selected = selected_value,
-          width = "30%"
+          width = "50%"
         )
       }
       
