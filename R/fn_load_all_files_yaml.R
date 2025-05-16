@@ -4,7 +4,7 @@ fn_load_all_files_yaml <- function(dir_path) {
   lista <- list()
   for (arch in archivos) {
     nombre <- basename(arch)
-    lista[[nombre]] <- yaml.load_file(arch)$choices
+    lista[[nombre]] <- yaml::yaml.load_file(arch)$choices
   }
   return(lista)
 }
