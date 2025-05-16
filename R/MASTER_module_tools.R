@@ -258,7 +258,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     
     # Dentro de tu módulo server, justo después del render de mostrar_detalles:
     # Dentro del server
-    df_todas_selecciones <- reactive({
+    df_tool_selection <- reactive({
       menus <- menus_a_mostrar()
       selections <- selecciones()
       
@@ -283,13 +283,13 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     })
     
     selected_tool <- reactive({
-      req(df_todas_selecciones())
-      the_selected_tools <- df_todas_selecciones()[nrow(df_todas_selecciones()), "choice_internal"]
+      req(df_tool_selection())
+      the_selected_tools <- df_tool_selection()[nrow(df_tool_selection()), "choice_internal"]
       the_selected_tools
     })
     
     output$mostrar_todas_selecciones <- renderPrint({
-      df <- df_todas_selecciones()
+      df <- df_tool_selection()
       if (is.null(df) || nrow(df) == 0) {
         cat("No hay seleccionados aún.\n")
       } else {
@@ -303,14 +303,14 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     })
     
     output$zocalo_tools <- renderUI({
-      req(df_todas_selecciones())
-      req(ncol(df_todas_selecciones())>= 1)
+      req(df_tool_selection())
+      req(ncol(df_tool_selection())>= 1)
       
-      fn_infoUI_zocalo_tools(df_data_obj = df_todas_selecciones())
+      fn_infoUI_zocalo_tools(df_data_obj = df_tool_selection())
     })
     
     return(reactive(list(selected_tool = selected_tool(), 
-                         df_todas_selecciones = df_todas_selecciones())))
+                         df_tool_selection = df_tool_selection())))
   })
 }
 
