@@ -3,7 +3,7 @@
     "path": "~/bulk/MyGitHub/Rscience2_ADVANCE/Rscience.menu/script002_Structure.R",
     "project_path": "script002_Structure.R",
     "type": "r_source",
-    "hash": "974057762",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1747349216566.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "15,0",
+        "cursorPosition": "5,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1747355452,
+    "lastKnownWriteTime": 1747357319,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1747355452020,
+    "last_content_update": 1747357319295,
     "read_only": false,
     "read_only_alternatives": []
 }

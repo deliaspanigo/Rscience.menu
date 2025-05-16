@@ -43,7 +43,7 @@ server <- function(input, output, session) {
   
   list_user_tool_selection <- MASTER_module_tools_server(id ="module_tools", show_dev = T)
   
-  observe(print(list_user_tool_selection()))
+  # observe(print(list_user_tool_selection()))
   
   output$mostrar_list <- renderPrint({
     obj <- list_user_tool_selection()

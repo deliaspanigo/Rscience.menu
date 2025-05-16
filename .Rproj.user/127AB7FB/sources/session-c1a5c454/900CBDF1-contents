@@ -22,8 +22,8 @@ devtools::clean_dll()
 # Instalar nuevamente
 devtools::install()
 ########################################
-library(Rscience.GeneralLM)
-Rscience.GeneralLM::run_app()
+library(Rscience.menu)
+Rscience.menu::run_app()
 
 
 remotes::install_github("deliaspanigo/Rscience.import")
