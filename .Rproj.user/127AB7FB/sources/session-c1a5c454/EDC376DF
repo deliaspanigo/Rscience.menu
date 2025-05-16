@@ -1,0 +1,27 @@
+{
+    "id": "EDC376DF",
+    "path": null,
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1747337168599.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "tempName": "Untitled6",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "13,20",
+        "scrollLine": "0"
+    },
+    "folds": "3|41|11|0|\n13|30|31|0|\n36|40|47|0|\n",
+    "lastKnownWriteTime": 1747325803,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747346817911,
+    "read_only": false,
+    "read_only_alternatives": []
+}

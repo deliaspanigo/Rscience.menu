@@ -1,0 +1,27 @@
+{
+    "id": "9470ED4B",
+    "path": "~/bulk/MyGitHub/Rscience2_ADVANCE/Rscience.menu/R/fn_PK_folder_path_yaml.R",
+    "project_path": "R/fn_PK_folder_path_yaml.R",
+    "type": "r_source",
+    "hash": "946763939",
+    "contents": "",
+    "dirty": false,
+    "created": 1747349826793.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "tempName": "Untitled7",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,0",
+        "scrollLine": "0"
+    },
+    "folds": "2|37|27|0|\n",
+    "lastKnownWriteTime": 1747349930,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747349930426,
+    "read_only": false,
+    "read_only_alternatives": []
+}

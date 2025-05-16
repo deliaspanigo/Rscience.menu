@@ -1,0 +1,4 @@
+Name: Rscience.menu
+Description: Rscience - Menu
+Binding: run_app
+Interactive: true

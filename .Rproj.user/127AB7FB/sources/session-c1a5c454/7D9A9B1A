@@ -1,0 +1,26 @@
+{
+    "id": "7D9A9B1A",
+    "path": "~/bulk/MyGitHub/Rscience2_ADVANCE/Rscience.menu/inst/shiny/myApp/app.R",
+    "project_path": "inst/shiny/myApp/app.R",
+    "type": "r_source",
+    "hash": "1555922806",
+    "contents": "",
+    "dirty": false,
+    "created": 1747324655347.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "68,4",
+        "scrollLine": "45"
+    },
+    "folds": "47|38|50|2|\n",
+    "lastKnownWriteTime": 1747354961,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747354961905,
+    "read_only": false,
+    "read_only_alternatives": []
+}

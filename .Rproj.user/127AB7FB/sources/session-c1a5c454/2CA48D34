@@ -1,0 +1,27 @@
+{
+    "id": "2CA48D34",
+    "path": "~/bulk/MyGitHub/Rscience2_ADVANCE/Rscience.menu/R/MASTER_module_tools.R",
+    "project_path": "R/MASTER_module_tools.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1747349191023.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "30,30",
+        "scrollLine": "26"
+    },
+    "folds": "215|44|253|4|\n283|31|287|4|\n289|53|296|4|\n298|49|301|4|\n",
+    "lastKnownWriteTime": 1747354876,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747354876086,
+    "read_only": false,
+    "read_only_alternatives": []
+}

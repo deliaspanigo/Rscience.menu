@@ -1,0 +1,95 @@
+library(shiny)
+library(yaml)
+
+# Supón que ya cargaste todos los archivos YAML en una lista en memoria
+# Aquí te pongo la carga en memoria (ejemplo con estructura similar a la tuya)
+# Para esto, debes tener en tu carpeta los archivos y ajustarlo en 'yaml_dir'
+
+yaml_dir <- "inst/yaml"  # ajusta a tu ruta real
+
+cargar_todos_yaml <- function(dir_path) {
+  archivos <- list.files(dir_path, pattern = "\\.yaml$", full.names=TRUE)
+  lista <- list()
+  for (arch in archivos) {
+    nombre <- basename(arch)
+    lista[[nombre]] <- yaml.load_file(arch)$choices
+  }
+  lista
+}
+
+# Carga inicial
+todos_menues <- cargar_todos_yaml(yaml_dir)
+
+# Función para buscar una opción en la lista, dado un 'file' o 'nombre'
+buscar_opcion <- function(lista, archivo_actual, seleccion_id) {
+  # 'archivo_actual' sería el nombre del YAML en la lista, ej: 'menu00.yaml'
+  opciones <- lista[[archivo_actual]]
+  if (is.null(opciones) || is.null(opciones[[seleccion_id]])) return(NULL)
+  opciones[[seleccion_id]]
+}
+
+ui <- fluidPage(
+  titlePanel("Menús dinámicos en memoria"),
+  sidebarLayout(
+    sidebarPanel(
+      actionButton("reiniciar", "Reiniciar"),
+      hr(),
+      h4("Menú en memoria"),
+      uiOutput("menu_ui"),
+      hr(),
+      termRender("Seleccion actual:"),
+      verbatimTextOutput("texto")
+    ),
+    mainPanel(
+      h4("Opciones"),
+      verbatimTextOutput("info")
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  # Estado del nivel: el 'archivo' llamando a esa lista en memoria
+  nivel_archivo <- reactiveVal("menu00.yaml")
+  
+  # Reiniciar
+  observeEvent(input$reiniciar, {
+    nivel_archivo("menu00.yaml")
+    output$texto <- renderText({"Menú reiniciado."})
+  })
+  
+  # Mostrar el menú en función del nivel actual
+  observeEvent(nivel_archivo(), {
+    archivo <- nivel_archivo()
+    opciones <- todos_menues[[archivo]]
+    if (is.null(opciones)) {
+      output$menu_ui <- renderUI(NULL)
+    } else {
+      choices <- setNames(
+        sapply(opciones, function(c) c$choice_external),
+        names(opciones)
+      )
+      output$menu_ui <- renderUI({
+        radioButtons("seleccion", label=NULL, choices=choices)
+      })
+    }
+  })
+  
+  # Cuando se selecciona una opción
+  observeEvent(input$seleccion, {
+    req(input$seleccion)
+    archivo_actual <- nivel_archivo()
+    opciones <- todos_menues[[archivo_actual]]
+    seleccion_id <- input$seleccion
+    opcion <- buscar_opcion(todos_menues, archivo_actual, seleccion_id)
+    if (is.null(opcion)) return()
+    # Mostrar en texto
+    output$info <- renderText({ paste("Seleccionaste:", opcion$choice_external) })
+    # Si tiene un 'file' para navegar
+    if (!is.null(opcion$file) && opcion$file != "NULL" && opcion$file != "") {
+      # Actualizamos nivel
+      nivel_archivo(opcion$file)
+    }
+  })
+}
+
+shinyApp(ui, server)
