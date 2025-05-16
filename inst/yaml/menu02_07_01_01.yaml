@@ -1,7 +1,7 @@
 choices:
   opt01:
     choice_external: "01 - Anova 1 way"
-    choice_internal: "opt_01"
+    choice_internal: "GeneralLM_fix_anova1"
     file: ""
   opt02:
     choice_external: "02 - Anova 1 way and 1 block"
