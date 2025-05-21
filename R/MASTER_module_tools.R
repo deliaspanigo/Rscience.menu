@@ -52,6 +52,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
           div(
             h4("Código de la herramienta:"),
             verbatimTextOutput(ns("mostrar_selected_tool"))
+          ),
+          div(
+            h4("Check de la herramienta:"),
+            verbatimTextOutput(ns("mostrar_check_selected_tool"))
           )
         )
       )
@@ -60,8 +64,19 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       
       
     })
+    
     dir_path <- fn_PK_folder_path_yaml()
-    list_df_R <- fn_SUPER_mod_better_df(dir_path)
+    list_all_yaml <- fn_load_all_files_yaml(dir_path)
+      
+    vector_labels <-   sapply(list_all_yaml, function(x){x$"obj_label"})
+    names(vector_labels) <-tools::file_path_sans_ext(names(list_all_yaml))
+    
+    observe(print(vector_labels))
+    
+    list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
+    
+    vector_tools_OK <- c("GeneralLM_fix_anova1")
+    
     ###############################################
     df_user_selection_tools <- reactiveVal(NULL)
     selected_tool <- reactiveVal(NULL)
@@ -110,7 +125,8 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
         # Creamos el selectInput
         ui_elements[[i]] <- selectInput(
           inputId = ns(paste0("sel_", menu_name)),
-          label = paste("Nivel", i, "-", menu_name),
+          # label = paste("Nivel", i, "-", menu_name),
+          label = vector_labels[menu_name],
           choices = choices,
           selected = selected_value,
           width = "50%"
@@ -291,6 +307,12 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       the_selected_tools
     })
     
+    check_selected_tool <- reactive({
+      
+      dt_ok <- selected_tool() %in% vector_tools_OK
+      dt_ok
+    })
+    
     output$mostrar_todas_selecciones <- renderPrint({
       df <- df_tool_selection()
       if (is.null(df) || nrow(df) == 0) {
@@ -301,8 +323,13 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     })
     
     output$mostrar_selected_tool <- renderPrint({
-      req(selected_tool())
+      # req(selected_tool())
       selected_tool()
+    })
+    
+    output$mostrar_check_selected_tool <- renderPrint({
+      # req(check_selected_tool())
+      check_selected_tool()
     })
     
     output$zocalo_tools <- renderUI({
@@ -313,6 +340,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     })
     
     return(reactive(list(selected_tool = selected_tool(), 
+                         check_selected_tool = check_selected_tool(),
                          df_tool_selection = df_tool_selection())))
   })
 }

@@ -1,3 +1,4 @@
+label: "General LM - Fixed - Family Test:"
 choices:
   opt01:
     choice_external: "01 - Anova"
@@ -15,3 +16,4 @@ choices:
     choice_external: "04 - Linear Regresion"
     choice_internal: "opt_04"
     file: ""
+

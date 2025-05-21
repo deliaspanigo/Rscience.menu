@@ -1,17 +1,19 @@
+label: "Options..."
 choices:
   opt01:
-    choice_external: "01 - Estadística Descriptiva"
+    choice_external: "01 - Descriptive Statistics"
     choice_internal: "opt_01"
     file: "menu01.yaml"
   opt02:
-    choice_external: "02 - Estadística Inferencial"
+    choice_external: "02 - Inferential Statistics"
     choice_internal: "opt_02"
     file: "menu02.yaml"
   opt03:
-    choice_external: "03 - Estadística Multivariada"
+    choice_external: "03 - Multivariate Statistics"
     choice_internal: "opt_03"
     file: "menu03.yaml"
   opt04:
     choice_external: "04 - Machine Learning"
     choice_internal: "opt_04"
     file: "menu04.yaml"
+

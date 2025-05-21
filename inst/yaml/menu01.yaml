@@ -1,22 +1,23 @@
+label: "Mi label 01"
 choices:
   opt01:
-    choice_external: "01 - Estadística descriptiva 1Q"
+    choice_external: "01 - Descriptive Statistics 1Q"
     choice_internal: "opt_01"
     file: ""
   opt02:
-    choice_external: "02 - Estadística descriptiva 1C"
+    choice_external: "02 - Descriptive Statistics 1C"
     choice_internal: "opt_02"
     file: ""
   opt03:
-    choice_external: "02 - Estadística descriptiva 2C independientes"
+    choice_external: "03 - Descriptive Statistics 2C Independent"
     choice_internal: "opt_03"
     file: ""
   opt04:
-    choice_external: "02 - Estadística descriptiva 2C apareadas"
+    choice_external: "04 - Descriptive Statistics 2C Paired"
     choice_internal: "opt_04"
     file: ""
   opt05:
-    choice_external: "02 - Estadística descriptiva QC"
+    choice_external: "05 - Descriptive Statistics QC"
     choice_internal: "opt_05"
     file: ""
 

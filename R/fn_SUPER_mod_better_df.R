@@ -1,8 +1,14 @@
 #' @export
-fn_SUPER_mod_better_df <- function(dir_path){
+fn_SUPER_mod_better_df <- function(list_all_yaml){
   
-  list_yaml <- fn_load_all_files_yaml(dir_path)
-  list_R    <- lapply(list_yaml, fn_yaml_2_R)
+  # list_yaml <- fn_load_all_files_yaml(dir_path)
+  
+  # list_label   <- lapply(list_yaml, function(x){x$"obj_label"})
+  list_choices <- lapply(list_all_yaml, function(x){x$"obj_choices"})
+  names(list_choices) <- names(list_all_yaml)
+  
+    
+  list_R    <- lapply(list_choices, fn_yaml_2_R)
   list_R    <- lapply(list_R, function(x){
     mi_list <- x
     vector_files <- x$vector_files

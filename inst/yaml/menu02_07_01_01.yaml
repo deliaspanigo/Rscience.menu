@@ -1,3 +1,4 @@
+label: "General LM - Fixed - Anova options:"
 choices:
   opt01:
     choice_external: "01 - Anova 1 way"
@@ -19,3 +20,4 @@ choices:
     choice_external: "05 - Anova Multifactorial"
     choice_internal: "opt_05"
     file: ""
+

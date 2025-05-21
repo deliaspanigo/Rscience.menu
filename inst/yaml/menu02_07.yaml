@@ -1,13 +1,15 @@
+label: "General LM - Fixed - Select model effects:"
 choices:
   opt01:
-    choice_external: "01 - Fixed"
+    choice_external: "01 - Fixed Effects"
     choice_internal: "opt_01"
     file: "menu02_07_01.yaml"
   opt02:
-    choice_external: "02 - Random"
+    choice_external: "02 - Random Effects"
     choice_internal: "opt_02"
     file: ""
   opt03:
-    choice_external: "03 - Mixed"
+    choice_external: "03 - Mixed Effects"
     choice_internal: "opt_03"
     file: ""
+

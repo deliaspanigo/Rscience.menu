@@ -1,49 +1,51 @@
+label: "Inferential Statistics tools..."
 choices:
   opt01:
-    choice_external: "01 - Test para 1Q"
+    choice_external: "01 - Test for 1Q"
     choice_internal: "opt_01"
     file: ""
   opt02:
-    choice_external: "02 - Test para 1C"
+    choice_external: "02 - Test for 1C"
     choice_internal: "opt_02"
     file: ""
   opt03:
-    choice_external: "03 - Test para 2Q"
+    choice_external: "03 - Test for 2Q"
     choice_internal: "opt_03"
     file: ""
   opt04:
-    choice_external: "04 - Test para 2C independientes"
+    choice_external: "04 - Test for 2C Independent"
     choice_internal: "opt_04"
     file: ""
   opt05:
-    choice_external: "05 - Test para 2C apareadas"
+    choice_external: "05 - Test for 2C Paired"
     choice_internal: "opt_05"
     file: ""
   opt06:
-    choice_external: "06 - Test para QC"
+    choice_external: "06 - Test for QC"
     choice_internal: "opt_06"
     file: ""
   opt07:
-    choice_external: "07 - Modelos Lineales Generales"
+    choice_external: "07 - General Linear Models"
     choice_internal: "opt_07"
     file: "menu02_07.yaml"
   opt08:
-    choice_external: "08 - Modelos Lineales Generales Mixtos"
+    choice_external: "08 - Mixed General Linear Models"
     choice_internal: "opt_08"
     file: ""
   opt09:
-    choice_external: "09 - Modelos Lineales Generalizados"
+    choice_external: "09 - Generalized Linear Models"
     choice_internal: "opt_09"
     file: ""
   opt10:
-    choice_external: "10 - Modelos Lineales Generalizados Mixtos"
+    choice_external: "10 - Mixed Generalized Linear Models"
     choice_internal: "opt_10"
     file: ""
   opt11:
-    choice_external: "11 - Modelos Lineales Generalizados Mixtos"
+    choice_external: "11 - Mixed Generalized Linear Models"
     choice_internal: "opt_11"
     file: ""
   opt12:
-    choice_external: "12 - Estadistica de distribucion libre"
+    choice_external: "12 - Nonparametric Statistics (Free distribution)"
     choice_internal: "opt_12"
     file: ""
+
