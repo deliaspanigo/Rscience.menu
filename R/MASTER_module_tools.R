@@ -71,7 +71,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     vector_labels <-   sapply(list_all_yaml, function(x){x$"obj_label"})
     names(vector_labels) <-tools::file_path_sans_ext(names(list_all_yaml))
     
-    observe(print(vector_labels))
+    # observe(print(vector_labels))
     
     list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
     
@@ -263,7 +263,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       cat("Selección: ", menu_data$choice_external[selected_row], " (", selection, ")\n\n", sep="")
       
       cat("Datos completos de la fila seleccionada:\n")
-      # print(menu_data[selected_row, ])
+      print(menu_data[selected_row, ])
       
       next_menu <- menu_data$vector_file_names[selected_row]
       if (!is.na(next_menu) && next_menu %in% names(list_df_R)) {
