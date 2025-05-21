@@ -76,6 +76,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
     
     vector_tools_OK <- c("GeneralLM_fix_anova1")
+    names(vector_tools_OK) <- vector_tools_OK
+    
+    vector_cartel <- c("Anova 1 way - Fixed Effects - General Linear Model")
+    names(vector_cartel) <- vector_tools_OK
     
     ###############################################
     df_user_selection_tools <- reactiveVal(NULL)
@@ -307,6 +311,12 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
       the_selected_tools
     })
     
+    selected_cartel <- reactive({
+      req(selected_tool)
+      
+      vector_cartel[selected_tool()]
+    })
+    
     check_selected_tool <- reactive({
       
       dt_ok <- selected_tool() %in% vector_tools_OK
@@ -341,6 +351,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     
     return(reactive(list(selected_tool = selected_tool(), 
                          check_selected_tool = check_selected_tool(),
+                         selected_cartel = selected_cartel(),
                          df_tool_selection = df_tool_selection())))
   })
 }
