@@ -15,5 +15,5 @@ choices:
   opt04:
     choice_external: "04 - Linear Regresion"
     choice_internal: "opt_04"
-    file: ""
+    file: "menu02_07_01_04.yaml"
 
