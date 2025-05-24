@@ -1,4 +1,5 @@
 label: "Inferential Statistics tools..."
+selected_pos: "7"
 choices:
   opt01:
     choice_external: "01 - Test for 1Q"

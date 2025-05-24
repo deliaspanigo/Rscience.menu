@@ -71,6 +71,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     vector_labels <-   sapply(list_all_yaml, function(x){x$"obj_label"})
     names(vector_labels) <-tools::file_path_sans_ext(names(list_all_yaml))
     
+    vector_selected_pos <- sapply(list_all_yaml, function(x){x$"obj_selected_pos"})
+    vector_selected_pos <- as.numeric(as.character(vector_selected_pos))
+    names(vector_selected_pos) <-tools::file_path_sans_ext(names(list_all_yaml))
+    
     # observe(print(vector_labels))
     
     list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
@@ -133,7 +137,8 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
           # label = paste("Nivel", i, "-", menu_name),
           label = vector_labels[menu_name],
           choices = choices,
-          selected = selected_value,
+          # selected = selected_value,
+          selected = choices[vector_selected_pos[menu_name] + 1], # <<<------ BORRAR LUEGO
           width = "50%"
         )
       }
