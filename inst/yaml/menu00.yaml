@@ -1,5 +1,5 @@
 label: "Options..."
-selected_pos: "2"
+selected_pos: "1"
 choices:
   opt01:
     choice_external: "01 - Descriptive Statistics"

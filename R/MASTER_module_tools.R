@@ -137,7 +137,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
           # label = paste("Nivel", i, "-", menu_name),
           label = vector_labels[menu_name],
           choices = choices,
-          # selected = selected_value,
+          selected = selected_value,
           # selected = choices[vector_selected_pos[menu_name] + 1], # <<<------ BORRAR LUEGO
           width = "50%"
         )
