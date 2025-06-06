@@ -80,12 +80,15 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
     
     vector_tools_OK <- c("GeneralLM_fix_anova1", 
-                         "GeneralLM_fix_slreg")
+                         "GeneralLM_fix_slreg",
+                         "GeneralLM_fix_dlreg")
     
     names(vector_tools_OK) <- vector_tools_OK
     
     vector_cartel <- c("Anova 1 way - Fixed Effects - General Linear Model",
-                       "Simple Linear Regresion - Fixed Effects - General Linear Model")
+                       "Simple Linear Regresion - Fixed Effects - General Linear Model",
+                       "Double Linear Regresion - Fixed Effects - General Linear Model")
+    
     names(vector_cartel) <- vector_tools_OK
     
     ###############################################

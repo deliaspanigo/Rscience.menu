@@ -7,7 +7,7 @@ choices:
     file: ""
   opt02:
     choice_external: "02 - Double Linear Regresion"
-    choice_internal: "opt_02"
+    choice_internal: "GeneralLM_fix_dlreg"
     file: ""
   opt03:
     choice_external: "03 - Multiple Linear Regresion (one model)"
