@@ -3,7 +3,7 @@ selected_pos: "1"
 choices:
   opt01:
     choice_external: "01 - Simple Linear Regresion"
-    choice_internal: "GeneralLM_fix_slinreg"
+    choice_internal: "GeneralLM_fix_slreg"
     file: ""
   opt02:
     choice_external: "02 - Double Linear Regresion"
