@@ -7,18 +7,22 @@ choices:
     file: ""
   opt02:
     choice_external: "02 - Anova 1 way and 1 block"
-    choice_internal: "opt_02"
+    choice_internal: "Rs_LM_fix_anova_02_1way1block"
     file: ""
   opt03:
     choice_external: "03 - Anova 2 ways"
-    choice_internal: "opt_03"
+    choice_internal: "Rs_LM_fix_anova_03_2ways"
     file: ""
   opt04:
     choice_external: "04 - Anova 3 ways"
-    choice_internal: "opt_04"
+    choice_internal: "Rs_LM_fix_anova_04_3ways"
     file: ""
   opt05:
     choice_external: "05 - Anova Multifactorial"
-    choice_internal: "opt_05"
+    choice_internal: "Rs_LM_fix_anova_05_multi_ways"
+    file: ""
+  opt06:
+    choice_external: "06 - Anova Multifactorial (ADVANCE)"
+    choice_internal: "Rs_LM_fix_anova_06_multi_ways_advance"
     file: ""
 

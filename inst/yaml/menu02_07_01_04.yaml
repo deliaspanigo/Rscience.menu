@@ -3,15 +3,15 @@ selected_pos: "1"
 choices:
   opt01:
     choice_external: "01 - Simple Linear Regresion"
-    choice_internal: "GeneralLM_fix_slreg"
+    choice_internal: "Rs_LM_fix_reg_01_simple"
     file: ""
   opt02:
     choice_external: "02 - Double Linear Regresion"
-    choice_internal: "GeneralLM_fix_dlreg"
+    choice_internal: "Rs_LM_fix_reg_02_double"
     file: ""
   opt03:
     choice_external: "03 - Multiple Linear Regresion (one model)"
-    choice_internal: "opt_03"
+    choice_internal: "Rs_LM_fix_reg_03_multi_one_model"
     file: ""
   opt04:
     choice_external: "04 - Selection Model"
