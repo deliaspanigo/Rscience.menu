@@ -79,7 +79,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
     
     list_df_R <- fn_SUPER_mod_better_df(list_all_yaml)
     
-    vector_tools_OK <- c("GeneralLM_fix_anova1", 
+    vector_tools_OK <- c("Rs_LM_fix_anova_01_1way", 
                          "GeneralLM_fix_slreg",
                          "GeneralLM_fix_dlreg")
     

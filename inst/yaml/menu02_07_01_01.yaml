@@ -1,9 +1,9 @@
-label: "General LM - Fixed - Anova options:"
+label: "General Linear Models - Fixed - Anova options:"
 selected_pos: "1"
 choices:
   opt01:
     choice_external: "01 - Anova 1 way"
-    choice_internal: "GeneralLM_fix_anova1"
+    choice_internal: "Rs_LM_fix_anova_01_1way"
     file: ""
   opt02:
     choice_external: "02 - Anova 1 way and 1 block"
