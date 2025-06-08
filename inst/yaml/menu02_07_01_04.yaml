@@ -11,7 +11,7 @@ choices:
     file: ""
   opt03:
     choice_external: "03 - Multiple Linear Regresion (one model)"
-    choice_internal: "Rs_LM_fix_reg_03_multi_one_model"
+    choice_internal: "Rs_LM_fix_reg_03_multiple_one_model"
     file: ""
   opt04:
     choice_external: "04 - Selection Model"
