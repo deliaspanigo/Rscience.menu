@@ -96,7 +96,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                          
                          "Rs_LM_fix_reg_01_simple",
                          "Rs_LM_fix_reg_02_double",
-                         "Rs_LM_fix_reg_03_multiple_one_model"
+                         "Rs_LM_fix_reg_03_multiple_one_model",
+                         
+                         "Rs_FD_04_kw",
+                         "Rs_FD_05_friendman"
                          )
     
     names(vector_tools_OK) <- vector_tools_OK
@@ -118,7 +121,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                        
                        "Simple Linear Regresion - Fixed Effects - General Linear Model",
                        "Double Linear Regresion - Fixed Effects - General Linear Model",
-                       "Multiple Linear Regresion - Fixed Effects - General Linear Model"
+                       "Multiple Linear Regresion - Fixed Effects - General Linear Model",
+                       
+                       "Kruskall-Wallis Test - Non parametric free distribution",
+                       "Friendman Test - Non parametric free distribution"
     )
     
     names(vector_cartel) <- vector_tools_OK
