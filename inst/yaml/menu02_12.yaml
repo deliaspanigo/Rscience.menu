@@ -1,0 +1,24 @@
+label: "General LM - Fixed - Select model effects:"
+selected_pos: "1"
+choices:
+  opt01:
+    choice_external: "01 - Wilcoxon test (one sample)"
+    choice_internal: "Rs_FD_01_wtos"
+    file: ""
+  opt02:
+    choice_external: "02 - Wilcoxon test (Two paired samples)"
+    choice_internal: "opt_02"
+    file: ""
+  opt03:
+    choice_external: "03 - Test Mann-Whitney (Two independet samples)"
+    choice_internal: "opt_03"
+    file: ""
+  opt04:
+    choice_external: "04 - Kruskall-Wallis test"
+    choice_internal: "opt_04"
+    file: ""
+  opt06:
+    choice_external: "05 - Friedman test"
+    choice_internal: "Rs_FD_05_friedman"
+    file: ""
+

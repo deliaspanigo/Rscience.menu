@@ -48,5 +48,5 @@ choices:
   opt12:
     choice_external: "12 - Nonparametric Statistics (Free distribution)"
     choice_internal: "opt_12"
-    file: ""
+    file: "menu02_12.yaml"
 
