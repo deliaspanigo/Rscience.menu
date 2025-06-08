@@ -99,7 +99,7 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                          "Rs_LM_fix_reg_03_multiple_one_model",
                          
                          "Rs_FD_04_kw",
-                         "Rs_FD_05_friendman"
+                         "Rs_FD_05_friedman"
                          )
     
     names(vector_tools_OK) <- vector_tools_OK
