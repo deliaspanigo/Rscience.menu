@@ -1,0 +1,15 @@
+label: "General Linear Models - Fixed - Dummy options:"
+selected_pos: "1"
+choices:
+  opt01:
+    choice_external: "01 - Dummy with interaction"
+    choice_internal: "Rs_LM_fix_dummy_01_with"
+    file: ""
+  opt02:
+    choice_external: "02 - Dummy without interaction"
+    choice_internal: "Rs_LM_fix_dummy_02_without"
+    file: ""
+  opt03:
+    choice_external: "03 - Dummy dual (with and without)"
+    choice_internal: "Rs_LM_fix_dummy_03_dual"
+    file: ""

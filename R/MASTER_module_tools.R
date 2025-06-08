@@ -90,6 +90,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                          "Rs_LM_fix_ancova_02_without",
                          "Rs_LM_fix_ancova_03_dual",
                          
+                         "Rs_LM_fix_dummy_01_with",
+                         "Rs_LM_fix_dummy_02_without",
+                         "Rs_LM_fix_dummy_03_dual",
+                         
                          "Rs_LM_fix_reg_01_simple",
                          "Rs_LM_fix_reg_02_double",
                          "Rs_LM_fix_reg_03_multi_one_model"
@@ -108,7 +112,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                        "Ancova without interaction - Fixed Effects - General Linear Model",
                        "Ancova dual (with and without interaction) - Fixed Effects - General Linear Model",
                        
-                                              
+                       "Dummy with interaction - Fixed Effects - General Linear Model",
+                       "Dummy without interaction - Fixed Effects - General Linear Model",
+                       "Dummy dual (with and without interaction) - Fixed Effects - General Linear Model",
+                       
                        "Simple Linear Regresion - Fixed Effects - General Linear Model",
                        "Double Linear Regresion - Fixed Effects - General Linear Model",
                        "Multiple Linear Regresion - Fixed Effects - General Linear Model"

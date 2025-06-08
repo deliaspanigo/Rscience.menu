@@ -12,7 +12,7 @@ choices:
   opt03:
     choice_external: "03 - Dummy"
     choice_internal: "opt_03"
-    file: ""
+    file: "menu02_07_01_03.yaml"
   opt04:
     choice_external: "04 - Linear Regresion"
     choice_internal: "opt_04"
