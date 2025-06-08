@@ -86,6 +86,10 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                          "Rs_LM_fix_anova_05_multi_ways",
                          "Rs_LM_fix_anova_06_multi_ways_advance",
                          
+                         "Rs_LM_fix_ancova_01_with",
+                         "Rs_LM_fix_ancova_02_without",
+                         "Rs_LM_fix_ancova_03_dual",
+                         
                          "Rs_LM_fix_reg_01_simple",
                          "Rs_LM_fix_reg_02_double",
                          "Rs_LM_fix_reg_03_multi_one_model"
@@ -99,7 +103,12 @@ MASTER_module_tools_server <- function(id, show_dev = FALSE) {
                        "Anova 3 ways - Fixed Effects - General Linear Model",
                        "Anova Multi ways - Fixed Effects - General Linear Model",
                        "Anova Multi ways (advance) - Fixed Effects - General Linear Model",
+
+                       "Ancova with interaction - Fixed Effects - General Linear Model",
+                       "Ancova without interaction - Fixed Effects - General Linear Model",
+                       "Ancova dual (with and without interaction) - Fixed Effects - General Linear Model",
                        
+                                              
                        "Simple Linear Regresion - Fixed Effects - General Linear Model",
                        "Double Linear Regresion - Fixed Effects - General Linear Model",
                        "Multiple Linear Regresion - Fixed Effects - General Linear Model"
