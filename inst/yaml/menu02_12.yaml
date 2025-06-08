@@ -15,7 +15,7 @@ choices:
     file: ""
   opt04:
     choice_external: "04 - Kruskall-Wallis test"
-    choice_internal: "opt_04"
+    choice_internal: "Rs_FD_04_kw"
     file: ""
   opt06:
     choice_external: "05 - Friedman test"
