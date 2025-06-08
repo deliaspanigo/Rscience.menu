@@ -1,0 +1,15 @@
+label: "General Linear Models - Fixed - Ancova options:"
+selected_pos: "1"
+choices:
+  opt01:
+    choice_external: "01 - Ancova with interaction"
+    choice_internal: "Rs_LM_fix_ancova_01_with"
+    file: ""
+  opt02:
+    choice_external: "02 - Ancova without interaction"
+    choice_internal: "Rs_LM_fix_ancova_02_without"
+    file: ""
+  opt03:
+    choice_external: "03 - Ancova dual (with and without)"
+    choice_internal: "Rs_LM_fix_ancova_03_dual"
+    file: ""

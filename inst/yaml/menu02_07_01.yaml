@@ -8,7 +8,7 @@ choices:
   opt02:
     choice_external: "02 - Ancova"
     choice_internal: "opt_02"
-    file: ""
+    file: "menu02_07_01_02.yaml"
   opt03:
     choice_external: "03 - Dummy"
     choice_internal: "opt_03"
